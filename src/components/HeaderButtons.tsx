@@ -1,4 +1,5 @@
 import { Info, Settings } from 'lucide-react';
+import { ThemeToggle } from '@/components/ThemeToggle';
 
 interface HeaderButtonsProps {
   apiKey: string;
@@ -20,6 +21,8 @@ export default function HeaderButtons({
         <span>README</span>
       </button>
 
+      {/* Theme Toggle Button */}
+      <ThemeToggle />
       {/* Settings Button */}
       <button
         onClick={onSettingsOpen}

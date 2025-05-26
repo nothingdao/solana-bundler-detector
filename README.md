@@ -1,4 +1,4 @@
-# Solana Bundler Detective
+# Solana Bundler Detector
 
 A foundation for building token transaction analysis tools on Solana. Provides basic bundling detection metrics with an extensible architecture for custom analysis requirements.
 

@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 256 256">
+  <defs>
+    <radialGradient id="detector-gradient" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#00FFA3"/>
+      <stop offset="40%" stop-color="#DC1FFF"/>
+      <stop offset="100%" stop-color="#9945FF"/>
+    </radialGradient>
+    <linearGradient id="pulse-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00FFA3" stop-opacity="0.2"/>
+      <stop offset="50%" stop-color="#DC1FFF" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#9945FF" stop-opacity="0.2"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Main detector circle -->
+  <circle cx="128" cy="128" r="100" fill="url(#detector-gradient)" stroke="#000" stroke-width="4" opacity="0.9"/>
+
+  <!-- Inner scanning ring -->
+  <circle cx="128" cy="128" r="70" fill="none" stroke="url(#pulse-gradient)" stroke-width="3" stroke-dasharray="20,10">
+    <animateTransform attributeName="transform" type="rotate" values="0 128 128;360 128 128" dur="3s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Detection dots -->
+  <circle cx="128" cy="80" r="4" fill="#00FFA3">
+    <animate attributeName="opacity" values="1;0.3;1" dur="1.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="160" cy="110" r="4" fill="#DC1FFF">
+    <animate attributeName="opacity" values="0.3;1;0.3" dur="1.5s" repeatCount="indefinite" begin="0.5s"/>
+  </circle>
+  <circle cx="96" cy="110" r="4" fill="#9945FF">
+    <animate attributeName="opacity" values="1;0.3;1" dur="1.5s" repeatCount="indefinite" begin="1s"/>
+  </circle>
+
+  <!-- Central crosshair -->
+  <g stroke="#000" stroke-width="2" opacity="0.7">
+    <line x1="118" y1="128" x2="138" y2="128"/>
+    <line x1="128" y1="118" x2="128" y2="138"/>
+  </g>
+
+  <!-- Outer pulse rings -->
+  <circle cx="128" cy="128" r="110" fill="none" stroke="url(#pulse-gradient)" stroke-width="2" opacity="0.6">
+    <animate attributeName="r" values="110;130;110" dur="2s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.6;0.1;0.6" dur="2s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Scanner beam -->
+  <path d="M128,128 L200,80 L210,85 L130,138 Z" fill="url(#pulse-gradient)" opacity="0.4">
+    <animateTransform attributeName="transform" type="rotate" values="0 128 128;360 128 128" dur="4s" repeatCount="indefinite"/>
+  </path>
+</svg>
