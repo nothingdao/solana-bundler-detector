@@ -403,7 +403,7 @@ function App() {
     <div className="min-h-screen bg-background p-8">
       <div className="mx-auto max-w-4xl space-y-8">
         <div className="text-center relative">
-          <h1 className="text-4xl font-bold">Solana Bundler Detective</h1>
+          <h1 className="text-4xl font-bold">Solana Bundler Detector</h1>
           <p className="text-muted-foreground mt-2">
             Analyze token transactions for coordinated buying patterns
           </p>

@@ -1,12 +1,12 @@
-# Solana Bundler Detective 🕵️
+# Solana Bundler Detector
 
-A sophisticated analytics tool for detecting coordinated buying patterns and bundled transactions on Solana tokens. Built with React, TypeScript, and powered by Helius API for real-time blockchain analysis.
+An analytics tool for detecting coordinated buying patterns and bundled transactions on Solana tokens. Built with React, TypeScript, and powered by Helius API for real-time blockchain analysis.
 
-## 🎯 What It Does
+## What It Does
 
-The Solana Bundler Detective analyzes token transaction patterns to identify potential market manipulation, bot activity, and coordinated buying schemes. It provides a comprehensive risk score along with detailed metrics and actionable insights.
+The Solana Bundler Detector analyzes token transaction patterns to identify potential market manipulation, bot activity, and coordinated buying schemes. It provides a comprehensive risk score along with detailed metrics and actionable insights.
 
-## 📊 Core Metrics Explained
+## Core Metrics Explained
 
 ### 1. Timing Cluster Score (40% weight)
 
@@ -76,7 +76,7 @@ The Solana Bundler Detective analyzes token transaction patterns to identify pot
 - Few wallets accumulating most of the supply
 - Potential coordinated accumulation strategy
 
-## 🔧 Key Functions & Methods
+## Key Functions & Methods
 
 ### Core Analysis Functions
 
@@ -155,7 +155,7 @@ Converts numerical scores into human-readable insights and recommendations.
 
 Calculates analysis time period for reporting.
 
-## 🚀 Extending the Platform
+## Extending the Platform
 
 ### Suggested Analytics Modules
 
@@ -334,7 +334,7 @@ interface AlertRule {
 - Time-series analysis charts
 - Heat maps for risk distribution
 
-## 🛠️ Technical Implementation Notes
+## Technical Implementation Notes
 
 ### Performance Optimizations
 
@@ -357,7 +357,7 @@ interface AlertRule {
 - Data anonymization for privacy protection
 - Audit logging for compliance
 
-## 🤝 Contributing
+## Contributing
 
 The modular architecture makes it easy to contribute new analyzers and features. Each metric is isolated and can be enhanced independently, making the platform highly extensible for different analytical needs.
 
